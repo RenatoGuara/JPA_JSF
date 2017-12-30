@@ -9,6 +9,7 @@ import br.edu.primefaces.model.Pessoa;
 import br.edu.primefaces.repository.PessoaRepository;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author renato
  */
 @ManagedBean
+@RequestScoped
 public class PessoaMB {
 
     private Pessoa pessoa;
