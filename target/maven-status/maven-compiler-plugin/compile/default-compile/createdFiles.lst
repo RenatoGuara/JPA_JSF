@@ -1,0 +1,6 @@
+br\edu\primefaces\model\Pessoa_.class
+br\edu\primefaces\repository\PessoaRepository.class
+br\edu\primefaces\filter\JPAFilter.class
+br\edu\primefaces\main\SchemaGeneration.class
+br\edu\primefaces\managedBean\PessoaMB.class
+br\edu\primefaces\model\Pessoa.class
