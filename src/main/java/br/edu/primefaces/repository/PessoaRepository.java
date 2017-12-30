@@ -24,9 +24,12 @@ public class PessoaRepository {
 
     public void adicionarPessoa(Pessoa pessoa) {
 
-        this.manager.persist(pessoa);
+        if (pessoa.getId() == null) {
+            this.manager.persist(pessoa);
+        } else {
+            this.manager.merge(pessoa);
+        }
         this.manager.getTransaction().commit();
-        
 
     }
 

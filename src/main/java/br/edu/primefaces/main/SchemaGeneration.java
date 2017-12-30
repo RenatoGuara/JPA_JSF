@@ -24,14 +24,14 @@ public class SchemaGeneration {
         manager.getTransaction().begin();
         PessoaRepository repository = new PessoaRepository(manager);
         Pessoa p = new Pessoa();
-        p.setNome("Renato com Tom cat de novo!!!!!!!!");
-        
-        repository.adicionarPessoa(p);
-        
+       
+        p.setNome("Renato com Tom cat de novo!!!!!!!!@@@@@@@@@@");
         
         
 
-        System.out.println("Conectou!!!!" +p.getNome());
+        repository.adicionarPessoa(p);
+
+        System.out.println("Conectou!!!!" + p.getId()+" --"+p.getNome() );
 
     }
 
